@@ -1,6 +1,3 @@
-<script>
-//window.location = '../index.php?hiUser'
-</script>
 <?php
 
 
@@ -12,11 +9,13 @@ if (isset($_POST["login"])) {
     $pass = "pass";
     setcookie($pass, $PWD, time() + (2592000 * 30), "/");
     if (emptyInputlogin($Email, $PWD) !== false) {
-        header("location: ../Login/?error=emptyInput");
+        
+	header("location: ../Login/?error=emptyInput");
         exit();
     }
     loginUser($conn, $Email, $PWD);
-    //header("location: ../index.php?hiUser");
+    echo "<script>window.location = '../index.php?hiUser'</script>";
+	header("location: ../index.php?hiUser");
 } else {
     header("location: ../Login/");
 }

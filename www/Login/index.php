@@ -2,8 +2,6 @@
 include("../Inc/head.inc.php");
 include("../Inc/nav.inc.php");
 include("../Inc/phoneNav.php");
-include('../Inc/func.inc.php');
-include('../Inc/DBH.php');
 
 ?>
 

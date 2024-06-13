@@ -1,11 +1,9 @@
 <?php
 session_start();
-$currentTimeout = ini_get('session.gc_maxlifetime');
+//$currentTimeout = ini_get('session.gc_maxlifetime');
 
 
 //ini_set('session.gc_maxlifetime', 2678400);
-
-
 
 
 ?>
